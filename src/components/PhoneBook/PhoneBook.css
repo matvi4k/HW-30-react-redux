@@ -1,0 +1,13 @@
+.phonebook {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.phonebook h1,
+.phonebook h2 {
+  margin: 0 0 16px;
+}
+
+.phonebook h2 {
+  margin-top: 24px;
+}
