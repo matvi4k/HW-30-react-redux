@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/HW-30-react/static/css/main.1bd765fd.css",
-    "main.js": "/HW-30-react/static/js/main.88bb8c1b.js",
-    "index.html": "/HW-30-react/index.html",
-    "main.1bd765fd.css.map": "/HW-30-react/static/css/main.1bd765fd.css.map",
-    "main.88bb8c1b.js.map": "/HW-30-react/static/js/main.88bb8c1b.js.map"
+    "main.css": "/HW-30-react-redux/static/css/main.1bd765fd.css",
+    "main.js": "/HW-30-react-redux/static/js/main.88bb8c1b.js",
+    "index.html": "/HW-30-react-redux/index.html",
+    "main.1bd765fd.css.map": "/HW-30-react-redux/static/css/main.1bd765fd.css.map",
+    "main.88bb8c1b.js.map": "/HW-30-react-redux/static/js/main.88bb8c1b.js.map"
   },
   "entrypoints": [
     "static/css/main.1bd765fd.css",
