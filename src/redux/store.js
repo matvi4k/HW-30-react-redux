@@ -1,16 +1,10 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { createStore } from "redux";
 import {
-  FLUSH,
-  PAUSE,
-  PERSIST,
-  PURGE,
-  REGISTER,
-  REHYDRATE,
   persistReducer,
   persistStore,
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
-import phoneBookReducer from "./phoneBookSlice";
+import phoneBookReducer from "./phoneBookReducer";
 
 const persistConfig = {
   key: "root",
@@ -20,14 +14,6 @@ const persistConfig = {
 
 const persistedReducer = persistReducer(persistConfig, phoneBookReducer);
 
-export const store = configureStore({
-  reducer: persistedReducer,
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware({
-      serializableCheck: {
-        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
-      },
-    }),
-});
+export const store = createStore(persistedReducer);
 
 export const persistor = persistStore(store);

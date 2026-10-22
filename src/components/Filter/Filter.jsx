@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { updateFilter } from "../../redux/phoneBookSlice";
+import { updateFilter } from "../../redux/phoneBookReducer";
 import "./Filter.css";
 
 export function Filter() {

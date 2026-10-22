@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addContact } from "../../redux/phoneBookSlice";
+import { addContact } from "../../redux/phoneBookReducer";
 import "./ContactForm.css";
 
 export function ContactForm() {
