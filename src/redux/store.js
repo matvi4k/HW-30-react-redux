@@ -1,4 +1,6 @@
-import { createStore } from "redux";
-import phoneBookReducer from "./phoneBookReducer";
+import { configureStore } from "@reduxjs/toolkit";
+import phoneBookReducer from "./phoneBookSlice";
 
-export const store = createStore(phoneBookReducer);
+export const store = configureStore({
+  reducer: phoneBookReducer,
+});
